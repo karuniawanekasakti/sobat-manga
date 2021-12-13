@@ -22,7 +22,7 @@ class LoginController extends Controller
     {
         $credentials = $this->validate($request,[
             'email' => 'required|email',
-            'password' => 'required|min:5|max:255'
+            'password' => 'required|min:5|max:225'
         ]);
 
         if(Auth::attempt($credentials)){

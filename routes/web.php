@@ -31,7 +31,7 @@ Route::get('/buku/info/{id}','BacaBukuController@info')->name('buku.info');
 Route::get('/baca/search','BacaBukuController@search')->name('baca.search');
 
 
-Route::get('/buku/comment/{id}','CommentController@index')->name('buku.comment');
+
 Route::post('/buku/comment','CommentController@store')->name('comment.store');
 
 

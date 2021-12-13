@@ -16,7 +16,7 @@ class DataUserController extends Controller
     public function index()
     {
         
-        $batas =  5;
+        $batas =  100;
         $jumlah_user = User::count();
         $data_user = User::orderBy('id','desc')->paginate($batas);
         $no = $batas * ($data_user->currentPage() -1 );
