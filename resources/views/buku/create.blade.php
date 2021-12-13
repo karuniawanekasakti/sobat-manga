@@ -1,7 +1,7 @@
 @extends('layout.home')
 @section('content')
     <div class="container mt-3">
-        <h3><strong>Tambah Buku</strong></h3>
+        <h3><strong><i class="fas fa-plus"></i> Tambah Buku</strong></h3>
         <form action="{{route('buku.store')}}" method="POST" enctype="multipart/form-data" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
