@@ -28,7 +28,7 @@ composer install
 ## Copy .Env
 
 ```bash
-copy .env.example menjadi .env
+copy .env.example to .env
 ```
 
 ## Create database 
@@ -43,7 +43,7 @@ DB_DATABASE : **your db name**
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=db_aplikasi
+DB_DATABASE=**your db name**
 DB_USERNAME=**your mysql name**
 DB_PASSWORD=**your mysql password**
 ```
@@ -54,13 +54,13 @@ DB_PASSWORD=**your mysql password**
 php artisan key:generate
 ```
 
-## Jalankan migrate dan seeder
+## Run db:seed
 
 ```bash
 php artisan migrate --seed
 ```
 
-## Jalankan Serve
+## Serve
 
 ```bash
 php artisan serve
