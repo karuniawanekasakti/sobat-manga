@@ -58,6 +58,9 @@ php artisan key:generate
 
 ```bash
 php artisan migrate --seed
+**default 
+user :admin@mail.com
+pass :admin**
 ```
 
 ## Serve
