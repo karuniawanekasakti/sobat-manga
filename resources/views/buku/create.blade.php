@@ -26,15 +26,18 @@
 
 
         <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label is-invalid">Deskripsi</label>
-            <input type="textarea" name='deskripsi' class="form-control  @error('deskripsi') is-invalid @enderror" value="{{old('harga')}}" style="height: 100px">
+            <label for="floatingTextarea2" class="form-label is-invalid">Deskripsi</label>
+            <textarea class="form-control" name="deskripsi" @error('deskripsi') is-invalid @enderror" id="floatingTextarea2" style="height: 100px"></textarea>
             @error('deskripsi')
             <div class="invalid-feedback">
                 {{$message}}
             </div>
             
         @enderror
+
         </div>
+
+        
 
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label is-invalid">Link Manga</label>
